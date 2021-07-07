@@ -23,10 +23,8 @@ public class Menu {
         System.out.println("Digite o nome do endereço do empregado:");
     }
 
-    public void add_tipo_pagamento() {
+    public void tipo_pagamento() {
         System.out.println("Digite a forma de pagamento do funcionario:");
-        System.out.println("1 - Por hora");
-        System.out.println("2 - Por mês");
     }
 
     public void alert_escolha_invalida() {
@@ -43,8 +41,8 @@ public class Menu {
         System.out.println("2 - Não comissionado");
     }
 
-    public void add_comissao() {
-        System.out.println("Digite a quantida da comissão:");
+    public void porcentagem_coissao () {
+        System.out.println("Digite a porcentagem da comissão:");
     }
 
     public void menu_carto_de_ponto () {
@@ -62,8 +60,12 @@ public class Menu {
         }
     }
 
-    public void salario(){
-        System.out.println("Digite o valor do salario:");
+    public void salario_horista(){
+        System.out.println("Digite o salario por hora:");
+    }
+	
+	public void salario_mensal(){
+        System.out.println("Digite o salario mensal:");
     }
 
     public void carto_de_ponto_chegada() {
@@ -75,5 +77,36 @@ public class Menu {
 
     public void alterar_dados() {
         
+    }
+	
+	public void ver_sindicato() {
+		System.out.println("O empregado participa do sindicato?");
+		System.out.println("1 - SIM			2 - NÃO");
+	}
+	
+	public void taxa_sindicato () {
+		
+	}
+
+    public void porcentagem_comissao () {
+        System.out.println("Digite a porcentagem da comissão:");
+    }
+
+    public void tipoFuncionario() {
+        System.out.println("Digite o tipo do funcionario:");
+        System.out.println("1 - Assalariado   2 - Horista");
+    }
+
+    public void digiteId() {
+        System.out.println("Digite o ID do empregado:");
+    }
+
+    public void dia() {
+        System.out.println("Digite o dia de hoje:");
+    }
+
+    public void inOut() {
+        System.out.println("1 - Entrada");
+        System.out.println("2 - Saída");
     }
 }
