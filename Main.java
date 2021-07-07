@@ -8,6 +8,8 @@ public class Main {
         Menu menu = new Menu();
         int escolha = 0;
         int id = 0;
+        int dia;
+
         while(true) {
             menu.init();
             menu.escolha();
@@ -15,7 +17,16 @@ public class Main {
             escolha = input.nextInt();
 
             if(escolha == 1) {
-                Funcoes.Add_empregado(id);
+                menu.tipoFuncionario();
+                int tipoFuncionario = input.nextInt();
+                input.nextLine();
+
+                if(tipoFuncionario == 1) {
+                    Funcoes.add_assalariado(id);
+                }
+                else if(tipoFuncionario == 2) {
+                    Funcoes.add_horista(id);
+                }
                 id++;
             }
             else if(escolha == 2) {
@@ -24,7 +35,9 @@ public class Main {
             else if(escolha == 3) {
                 menu.id();
                 int aux = input.nextInt();
-                Funcoes.cartao_de_ponto(aux);
+                menu.dia();
+                dia = input.nextInt() - 1;
+                Funcoes.cartao_de_ponto(aux, dia);
             }
             else if(escolha == 4) {
                 
