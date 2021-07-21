@@ -40,19 +40,25 @@ public class Main {
                 Funcoes.cartao_de_ponto(aux, dia);
             }
             else if(escolha == 4) {
-                
+                menu.venda();
+                int aux = input.nextInt();
+                Funcoes.vendas(aux);
             }
             else if(escolha == 5) {
-                
+                menu.taxa_de_servico();
+                int aux = input.nextInt();
+                Funcoes.taxa_de_servico(aux);
             }
             else if(escolha == 6) {
-                menu.alterar_dados();
+                menu.alterarDados();
+                int aux = input.nextInt();
+                Funcoes.alterarDados(aux);
             }
             else if(escolha == 7) {
-                break;
+                Funcoes.Lista_de_empregados();
             }
             else if(escolha == 8) {
-                Funcoes.Lista_de_empregados();
+                break;
             }
             else {
                 menu.alert_escolha_invalida();

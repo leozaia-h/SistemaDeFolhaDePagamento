@@ -11,8 +11,8 @@ public class Menu {
         System.out.println("[4] - Lançar Resultado Venda");
         System.out.println("[5] - lançar uma taxa de serviço");
         System.out.println("[6] - Alterar detalhes de um empregado");
-        System.out.println("[7] - Sair");
-        System.out.println("[8] - Listar todos empregados");
+        System.out.println("[7] - Listar todos empregados");
+        System.out.println("[8] - Sair");
     }
 
     public void add_nome() {
@@ -74,10 +74,6 @@ public class Menu {
     public void carto_de_ponto_saida() {
         System.out.println("Digite o horario de saída:");
     }
-
-    public void alterar_dados() {
-        
-    }
 	
 	public void ver_sindicato() {
 		System.out.println("O empregado participa do sindicato?");
@@ -108,5 +104,36 @@ public class Menu {
     public void inOut() {
         System.out.println("1 - Entrada");
         System.out.println("2 - Saída");
+    }
+
+    public void venda() {
+        System.out.println("Digite o ID do funcionário:");
+    }
+
+    public void taxa_de_servico() {
+        System.out.println("Digite o ID do funcionário:");
+    }
+
+    public void digitarTaxa() {
+        System.out.println("Digite o valor da taxa a ser cobrada:");
+    }
+
+    public void alterarDados() {
+        System.out.println("Qual dado você deseja alterar?");
+        System.out.println("[1] - Nome");
+        System.out.println("[2] - Endereço");
+        System.out.println("[3] - Tipo do funcionário");
+        System.out.println("[4] - Método de pagamento");
+        System.out.println("[5] - Membro do sindicato");
+        System.out.println("[6] - Identificação no sindicato");
+        System.out.println("[7] - Taxa sindical");
+    }
+
+    public void alterarDadosNome() {
+        System.out.println("Digite o ");
+    }
+
+    public void valorVenda() {
+        System.out.println("Digite o valor da venda:");
     }
 }
