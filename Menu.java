@@ -12,7 +12,8 @@ public class Menu {
         System.out.println("[5] - lançar uma taxa de serviço");
         System.out.println("[6] - Alterar detalhes de um empregado");
         System.out.println("[7] - Listar todos empregados");
-        System.out.println("[8] - Sair");
+        System.out.println("[8] - Rodar folha de pagamento");
+        System.out.println("[99] - Sair");
     }
 
     public void add_nome() {
@@ -24,7 +25,8 @@ public class Menu {
     }
 
     public void tipo_pagamento() {
-        System.out.println("Digite a forma de pagamento do funcionario:");
+        System.out.println("Digite a forma de pagamento do funcionario:\n");
+        System.out.println("1 - cheque\n2 - em dinheiro\n3 - deposito em conta");
     }
 
     public void alert_escolha_invalida() {
@@ -64,8 +66,8 @@ public class Menu {
         System.out.println("Digite o salario por hora:");
     }
 	
-	public void salario_mensal(){
-        System.out.println("Digite o salario mensal:");
+	public void salario(){
+        System.out.println("Digite o valor do salario:");
     }
 
     public void carto_de_ponto_chegada() {
@@ -81,7 +83,7 @@ public class Menu {
 	}
 	
 	public void taxa_sindicato () {
-		
+		System.out.println("Digite o valor da taxa do sindicato:");
 	}
 
     public void porcentagem_comissao () {
@@ -90,11 +92,7 @@ public class Menu {
 
     public void tipoFuncionario() {
         System.out.println("Digite o tipo do funcionario:");
-        System.out.println("1 - Assalariado   2 - Horista");
-    }
-
-    public void digiteId() {
-        System.out.println("Digite o ID do empregado:");
+        System.out.println("1 - Assalariado\n2 - Horista\n");
     }
 
     public void dia() {
@@ -104,14 +102,6 @@ public class Menu {
     public void inOut() {
         System.out.println("1 - Entrada");
         System.out.println("2 - Saída");
-    }
-
-    public void venda() {
-        System.out.println("Digite o ID do funcionário:");
-    }
-
-    public void taxa_de_servico() {
-        System.out.println("Digite o ID do funcionário:");
     }
 
     public void digitarTaxa() {
@@ -130,10 +120,37 @@ public class Menu {
     }
 
     public void alterarDadosNome() {
-        System.out.println("Digite o ");
+        System.out.println("Digite o novo nome");
+    }
+
+    public void alterarDadosEndereco() {
+        System.out.println("Digite o novo endereço:");
+    }
+
+    public void alterarDadosTipoPagamento() {
+        System.out.println("Digite o novo método de pagameto:");
+        System.out.println("1 - Assalariado\n2 - Horista\n");
+    }
+
+    public void alterarDadosMetodoPagamento() {
+        System.out.println("Digite o novo método de pagameto:");
+        System.out.println("1 - Cheque\n2 - Dinheiro\n3 - Depósito");
+    }
+
+    public void alterarDadosSindicato() {
+        System.out.println("O funcionário pertence ao sindicato?");
+        System.out.println("1 - SIM\n2 - NÃO");
+    }
+
+    public void alterarDadosNovaTaxaSind() {
+        System.out.println("Digite a taxa do sindicato:");
     }
 
     public void valorVenda() {
         System.out.println("Digite o valor da venda:");
+    }
+
+    public void rmEmpregado() {
+        System.out.println("Digite o ID do empregado que deseja remover:");
     }
 }
