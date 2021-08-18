@@ -1,12 +1,15 @@
 public class Funcionario {
     String nome;
     String endereco;
-    //Metodo de pagamento
-    //1 - cheque / 2 - em dinheiro / 3 - deposito em conta
-    double taxa_servico;
+    /**
+     * Metodo de pagamento
+     * 1 - cheque / 2 - em dinheiro / 3 - deposito em conta
+    **/
     int tipo_pagamento;
-	int ver_sindicato;
+    double taxa_servico;
+	int verSindicate;
     int idSindicato;
-    double taxa_sindicato;
+    double taxSindicate;
     int id;
+    String agendaPagamento;
 }

@@ -16,11 +16,11 @@ public class Menu {
         System.out.println("[99] - Sair");
     }
 
-    public void add_nome() {
+    public void addName() {
         System.out.println("Digite o nome do empregado:");
     }
 
-    public void add_endereco() {
+    public void addAddress() {
         System.out.println("Digite o nome do endereço do empregado:");
     }
 
@@ -41,10 +41,6 @@ public class Menu {
     public void ver_comissao() {
         System.out.println("1 - Comissionado");
         System.out.println("2 - Não comissionado");
-    }
-
-    public void porcentagem_coissao () {
-        System.out.println("Digite a porcentagem da comissão:");
     }
 
     public void menu_carto_de_ponto () {
@@ -77,12 +73,12 @@ public class Menu {
         System.out.println("Digite o horario de saída:");
     }
 	
-	public void ver_sindicato() {
+	public void verSindicate() {
 		System.out.println("O empregado participa do sindicato?");
 		System.out.println("1 - SIM			2 - NÃO");
 	}
 	
-	public void taxa_sindicato () {
+	public void taxSindicate () {
 		System.out.println("Digite o valor da taxa do sindicato:");
 	}
 
@@ -95,8 +91,33 @@ public class Menu {
         System.out.println("1 - Assalariado\n2 - Horista\n");
     }
 
+    public void formaPagamento() {
+        System.out.println("Qual a forma de pagamento?");
+        System.out.println("1 - Mensal      2 - Semanal");
+    }
+
+    public void semanasPagamento() {
+        System.out.println("A cada quantas semanas deseja receber?");
+        System.out.println("1 - A cada semana");
+        System.out.println("2 - A cada 2 semanas");
+        System.out.println("3 - A cada 3 semanas");
+    }
+
+    public void diaSemana() {
+        System.out.println("Escolha o dia da semana:");
+        System.out.println("2 - Segunda");
+        System.out.println("3 - terça");
+        System.out.println("4 - Quarta");
+        System.out.println("5 - Quinta");
+        System.out.println("6 - Sexta");
+    }
+
     public void dia() {
-        System.out.println("Digite o dia de hoje:");
+        System.out.println("Digite o dia:");
+    }
+
+    public void ultimoDia() {
+        System.out.println("O pagamento ira ser realizado no ultimo dia do mês?\n1 - SIM\n2 - NÃO");
     }
 
     public void inOut() {
@@ -120,7 +141,7 @@ public class Menu {
     }
 
     public void alterarDadosNome() {
-        System.out.println("Digite o novo nome");
+        System.out.println("Digite o novo nome:");
     }
 
     public void alterarDadosEndereco() {

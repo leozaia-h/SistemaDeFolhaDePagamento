@@ -9,6 +9,35 @@ public class FolhaDePagamento {
         return dia;
     }
 
+    public String sHoje() {
+        Calendar c = Calendar.getInstance();
+        int dia = c.get(Calendar.DAY_OF_WEEK);
+        
+        if(dia == 1) {
+            return "domingo";
+        }
+        else if(dia == 2) {
+            return "segunda";
+        }
+        else if(dia == 3) {
+            return "terça";
+        }
+        else if(dia == 4) {
+            return "quarta";
+        }
+        else if(dia == 5) {
+            return "quinta";
+        }
+        else if(dia == 6) {
+            return "sexta";
+        }
+        else if(dia == 7) {
+            return "sabado";
+        }
+
+        return "erro ao saber o dia";
+    }
+
     public int diasMes() {
         Calendar c = Calendar.getInstance();
         int diasMes = c.getActualMaximum(Calendar.DAY_OF_MONTH);
@@ -21,10 +50,6 @@ public class FolhaDePagamento {
         int aux = c.getActualMaximum(Calendar.DAY_OF_MONTH);
 
         System.out.printf("%d\n", aux);
-        /**
-        if(c.get(aux) == Calendar.SUNDAY) {
-            aux -= 2;
-        } */
         if(c.get(Calendar.DAY_OF_WEEK) == Calendar.WEDNESDAY) {
             aux -= 1;
         }
@@ -58,5 +83,13 @@ public class FolhaDePagamento {
         else {
             return false;
         }
+    }
+
+    public boolean verSemanal()  {
+        Calendar calendar = Calendar.getInstance();
+        if(calendar.get(Calendar.DAY_OF_WEEK) == Calendar.FRIDAY) {
+            return true;
+        }
+        return false;
     }
 }

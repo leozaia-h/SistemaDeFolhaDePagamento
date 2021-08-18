@@ -1,12 +1,7 @@
 import java.util.Scanner;
 /**
  * Falta:
- * ID sindicato na alteração de dado
- * Alterar tipo do funcionario (pagamento)
- * Rodar Pagamento
  * Undo/redo
- * Agenda de pagamento
- * Criação de nova agenda de pagamento
 **/
 public class Main {
     public static void main(String[] args) {
@@ -27,10 +22,16 @@ public class Main {
         while(true) {
             menu.init();
             menu.escolha();
-            System.out.printf("%d\n", diasMes);
+
+            if(escolha == 1) {
+                System.out.printf("O ID do funcionario adicionado é %d\n", id-1);
+            }
 
             escolha = input.nextInt();
+            input.nextLine();
 
+            menu.clearScreen(); 
+        
             if(escolha == 1) {
                 menu.tipoFuncionario();
                 int tipoFuncionario = input.nextInt();
@@ -40,7 +41,7 @@ public class Main {
                     Funcoes.add_assalariado(id, idSindicato);
                 }
                 else if(tipoFuncionario == 2) {
-                    Funcoes.add_horista(id, idSindicato);
+                    Funcoes.addHorista(id, idSindicato);
                 }
                 id++;
                 idSindicato++;
@@ -55,8 +56,8 @@ public class Main {
             else if(escolha == 3) {
                 menu.id();
                 int aux = input.nextInt();
-                dia = input.nextInt() - 1;
-                Funcoes.cartao_de_ponto(aux, dia);
+                input.nextLine();
+                Funcoes.cartao_de_ponto(aux, dia-1);
             }
             else if(escolha == 4) {
                 menu.id();
@@ -66,6 +67,7 @@ public class Main {
             else if(escolha == 5) {
                 menu.id();
                 int aux = input.nextInt();
+                input.nextLine();
                 Funcoes.taxa_de_servico(aux);
             }
             else if(escolha == 6) {

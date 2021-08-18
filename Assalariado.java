@@ -1,6 +1,6 @@
 public class Assalariado extends Funcionario{
-    double salario;
     int verComissao;
+    double salario;
     double taxaComissao;
     double valor_vendas;
 }
